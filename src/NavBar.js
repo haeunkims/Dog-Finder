@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./NavBar.css";
 
 class NavBar extends Component {
@@ -13,9 +13,9 @@ class NavBar extends Component {
     ));
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a className="navbar-brand" href="#">
-          Dog Shelter
-        </a>
+        <Link className="navbar-brand" to="/dogs">
+          Dog Web
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
